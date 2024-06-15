@@ -3,7 +3,8 @@ import Header from "./components/Header";
 import Products from "./components/Products";
 import Cart from "./components/Cart";
 import Footer from "./components/Footer";
-import { createContext, useCallback, useState } from "react";
+import { CartProvider } from "./context/cart";
+import useFilters from "./hooks/useFilters";
 export default function App() {
   const maxPrice = 500;
   const categories = [
@@ -14,25 +15,17 @@ export default function App() {
     "women's clothing",
   ];
 
-  const products = initialProducts.products;
-  const [filters, setFilters] = useState({
-    query: "",
-    minPrice: 0,
-    category: "all",
-  });
-
-  const cartContext = createContext();
+  const { filterProducts } = useFilters();
+  const filteredProducts = filterProducts(initialProducts.products);
 
   return (
-    <>
-      <cartContext.Provider value={{ setFilters }}>
-        <Header maxPrice={maxPrice} categories={categories} />
-        <main>
-          <Products products={products} />
-          <Cart products={products} />
-        </main>
-      </cartContext.Provider>
+    <CartProvider>
+      <Header maxPrice={maxPrice} categories={categories} />
+      <main>
+        <Products products={filteredProducts} />
+        <Cart products={filteredProducts} />
+      </main>
       <Footer />
-    </>
+    </CartProvider>
   );
 }
