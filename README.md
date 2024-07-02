@@ -2,11 +2,13 @@
 
 ## acerca
 
-En este proyecto voy a aprender sobre React desplegando un projecto siguiendo una serie de videos de [Midudev](https://github.com/midudev) y usando otras fuentes de documentación e inteligencia artificial.
+En este proyecto voy a aprender sobre React, desplegando una serie de proyectos siguiendo los videos de [Midudev](https://github.com/midudev) y usando otras fuentes de documentación e inteligencia artificial.
 
 Este repositorio esta basado en el repositorio de [Midudev](https://github.com/midudev) [aprendiendo-react](https://github.com/midudev/aprendiendo-react).
 
-## Heramientas
+Dentro de este repositorio dejaré apuntes básicos sobre lo que es React y los sitios de documentación al igual que en dónde buscar componentes y demás. Para ello ver el siguiente archivo: [Todo de React](https://github.com/Jhoan5/aprendiendo-react/main/todoDeReact.md)
+
+## Herramientas
 
 <table>
   <tr>
@@ -48,7 +50,7 @@ $ git clone https://github.com/Jhoan5/aprendiendo-react.git
 $ npm create vite@latest
 ```
 
-- Luego sigue el paso a paso de la instalación despues de ejecutar seleccionando las tecnologías y elementos que deseas usar. y ejecuta el siguiente comando para ejecutar.
+- Luego sigue el paso a paso de la instalación después de ejecutar seleccionando las tecnologías y elementos que deseas usar. y ejecuta el siguiente comando para ejecutar.
 
 ```bash
 $ npm run dev
