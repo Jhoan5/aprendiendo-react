@@ -6,7 +6,7 @@ En este proyecto voy a aprender sobre React, desplegando una serie de proyectos 
 
 Este repositorio esta basado en el repositorio de [Midudev](https://github.com/midudev) [aprendiendo-react](https://github.com/midudev/aprendiendo-react).
 
-Dentro de este repositorio dejaré apuntes básicos sobre lo que es React y los sitios de documentación al igual que en dónde buscar componentes y demás. Para ello ver el siguiente archivo: [Todo de React](https://github.com/Jhoan5/aprendiendo-react/main/todoDeReact.md)
+Dentro de este repositorio dejaré apuntes básicos sobre lo que es React y los sitios de documentación al igual que en dónde buscar componentes y demás. Para ello ver el siguiente archivo: [Todo de React](https://github.com/Jhoan5/aprendiendo-react/blob/main/todoDeReact.md)
 
 ## Herramientas
 
