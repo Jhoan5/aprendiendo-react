@@ -1,14 +1,23 @@
-import { useState } from "react"
-export function ButtonComponent({ userName, description, initialIsFollowing }) {
-  const url = "https://avatars.githubusercontent.com/u/125749979?v=4"
+import { useState } from 'react'
+type ButtonProps = {
+  userName: string
+  description: string
+  initialIsFollowing: boolean
+}
+export function ButtonComponent({
+  userName,
+  description,
+  initialIsFollowing
+}: ButtonProps) {
+  const url = 'https://avatars.githubusercontent.com/u/125749979?v=4'
   const [isFollowing, setIsFollowing] = useState(initialIsFollowing)
-  const text = isFollowing ? "Siguiendo" : "Seguir"
-  const classIsfollowing = isFollowing ? "following" : "no-following"
+  const text = isFollowing ? 'Siguiendo' : 'Seguir'
+  const classIsfollowing = isFollowing ? 'following' : 'no-following'
   const handleClick = () => {
     setIsFollowing(!isFollowing)
   }
   return (
-    <article style={{ color: "white" }}>
+    <article style={{ color: 'white' }}>
       <header>
         <img src={url} alt='Avatar' />
         <div>
@@ -26,3 +35,4 @@ export function ButtonComponent({ userName, description, initialIsFollowing }) {
     </article>
   )
 }
+
