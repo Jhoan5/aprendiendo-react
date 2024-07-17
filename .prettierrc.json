@@ -1,25 +1,17 @@
 {
   "charset": "utf-8",
-  "endOfLine": "lf",
+  "endOfLine": "crlf",
   "trimTrailingWhitespace": true,
   "insertFinalNewline": true,
   "requirePragma": false,
+  "insertPragma": false,
   "overrides": [
     {
-      "files": "*.tsx",
+      "files": "*.{js,ts,jsx,tsx}",
       "options": {
-        "semi": false
-      }
-    },
-    {
-      "files": "*.jsx",
-      "options": {
+        "printWidth": 80,
         "arrowParens": "always",
         "bracketSpacing": true,
-        "insertPragma": false,
-        "jsxBracketSameLine": false,
-        "jsxSingleQuote": true,
-        "printWidth": 80,
         "proseWrap": "always",
         "semi": false,
         "singleQuote": true,
@@ -27,7 +19,23 @@
         "useTabs": false,
         "trailingComma": "none"
       }
+    },
+    {
+      "files": "*.{jsx,tsx}",
+      "options": {
+        "jsxBracketSameLine": false,
+        "jsxSingleQuote": true
+      }
+    },
+    {
+      "files": "*.json",
+      "options": {
+        "printWidth": 80,
+        "tabWidth": 2,
+        "useTabs": false
+      }
     }
   ],
   "ignore": ["node_modules"]
 }
+
