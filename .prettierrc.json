@@ -1,0 +1,33 @@
+{
+  "charset": "utf-8",
+  "endOfLine": "lf",
+  "trimTrailingWhitespace": true,
+  "insertFinalNewline": true,
+  "requirePragma": false,
+  "overrides": [
+    {
+      "files": "*.tsx",
+      "options": {
+        "semi": false
+      }
+    },
+    {
+      "files": "*.jsx",
+      "options": {
+        "arrowParens": "always",
+        "bracketSpacing": true,
+        "insertPragma": false,
+        "jsxBracketSameLine": false,
+        "jsxSingleQuote": true,
+        "printWidth": 80,
+        "proseWrap": "always",
+        "semi": false,
+        "singleQuote": true,
+        "tabWidth": 2,
+        "useTabs": false,
+        "trailingComma": "none"
+      }
+    }
+  ],
+  "ignore": ["node_modules"]
+}
