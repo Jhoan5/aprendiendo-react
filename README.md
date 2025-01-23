@@ -57,3 +57,5 @@ npm run dev
 ### Añadir nuevos proyectos
 
 _En proceso..._
+
+> Proyecto no terminado, no acepta colaboraciones y se mantiene, solo lectura
